@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: inherit
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  padding: 20px 20vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.head {
+  background-color: steelblue;
+  padding: 5px 20px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 20px;
+  z-index: 100
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(44, 44, 139);
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 4px -1px 20px -6px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 4px -1px 20px -6px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 4px -1px 20px -6px rgba(0, 0, 0, 0.49);
+}
+
+.card img {
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info div {
+  cursor: pointer;
+  color: inherit;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form div {
+  margin-bottom: 5px;
+  padding: 0px 10px;
+  width: 300px;
+  height: 35px;
+  border: 1px solid lightgray;
+}
+
+.form div input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px
+}
+
+.project img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.edit-form {
+  display: none
 }
